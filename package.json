@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/betafrost79/pehati/issues"
   },
-  "homepage": "https://github.com/betafrost79/pehati#readme"
+  "homepage": "https://github.com/betafrost79/pehati#readme",
+  "dependencies": {
+    "normalize-scss": "^7.0.1",
+    "normalize.css": "^8.0.1"
+  }
 }
