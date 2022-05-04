@@ -13,19 +13,24 @@
 <body>
     <header class="header">
     <div class="wrapper header__wrapper">
-        <a href="#" class="logo"><img src="./img/logo.png" alt="Productly LCC"></a>
-        <nav class="header__navigation">
-            <ul class="navigation">
-            <li class="navigation__link">Home</li>
-            <li class="navigation__link">Services</li>
-            <li class="navigation__link">About</li>
-            <li class="navigation__link">Product</li>
-            </ul>
-        </nav>
-        <div class="header__buttons">
-            <button class="button button_bordered">Sign In</button>
-            <button class="button button_colored">Sign Up</button>
-        </div>
+                <a href="#" class="logo"><img src="./img/logo.png" alt="Productly LCC"></a>
+                <div class="header__logo-line">
+                    <span class="hamburger">
+                        <span class="hamburger__line"></span>
+                    </span>
+                </div>
+                <nav class="header__navigation">
+                    <ul class="navigation">
+                    <li class="navigation__link">Home</li>
+                    <li class="navigation__link">Services</li>
+                    <li class="navigation__link">About</li>
+                    <li class="navigation__link">Product</li>
+                    </ul>
+                </nav>
+                <div class="header__buttons">
+                    <button class="button button_bordered">Sign In</button>
+                    <button class="button button_colored">Sign Up</button>
+                </div>
     </div>
     </header>
     <main>
@@ -189,32 +194,32 @@
     </section>
     <section class="about-us">
         <div class="wrapper">
-            <h2>About us</h2>
-            <p>Your About Us page is vital. It’s often the first stop in any user’s journey through a website or blog. It also shouldn’t be their last, because first impressions count online just as much as they do in the real world. If your visitors aren’t impressed, you can expect them to leave without reading your awesome content or completing a conversion action (e.g., signing up for your newsletter, making a purchase).</p>
-            <div class="layout-3-column">
+            <h2 class="about-us__title">About us</h2>
+            <p class="about-us__description">Your About Us page is vital. It’s often the first stop in any user’s journey through a website or blog. It also shouldn’t be their last, because first impressions count online just as much as they do in the real world. If your visitors aren’t impressed, you can expect them to leave without reading your awesome content or completing a conversion action (e.g., signing up for your newsletter, making a purchase).</p>
+            <div class="layout-3-column emloyee-container">
                 <div class="employee block-shadowed">
                     <div class="employee__content">
-                        <h5>Kathy Rosenberg</h5>
-                        <p class="employee__title">Product Mannager</p>
-                        <a href="mailto:100cars@gmail.com">100cars@gmail.com</a>
-                        <img class="emlojees__image" src="./img/employees/1.png" alt="employees">
+                        <h5 class="employee__name">Kathy Rosenberg</h5>                      
+                        <p class="employee__title">Product Mannager</p>                       
+                        <a class="employee__contact" href="mailto:100cars@gmail.com">100cars@gmail.com</a>
                     </div>
+                    <img class="employee__image" src="./img/employees/1.png" alt="employees">
                 </div>
                 <div class="employee block-shadowed">
                     <div class="employee__content">
-                        <h5>Alexandra Boyarskaya</h5>
+                        <h5 class="employee__name">Alexandra Boyarskaya</h5>
                         <p class="employee__title">Support Marketing Specialist</p>
-                        <a href="mailto:100cars@gmail.com">100cars@gmail.com</a>
-                        <img class="emlojees__image" src="./img/employees/2.png" alt="employees">
+                        <a class="employee__contact" href="mailto:100cars@gmail.com">100cars@gmail.com</a>
                     </div>
+                    <img class="employee__image" src="./img/employees/2.png" alt="employees">
                 </div>
                 <div class="employee block-shadowed">
                     <div class="employee__content">    
-                        <h5>Melani Amini</h5>
+                        <h5 class="employee__name">Melani Amini</h5>
                         <p class="employee__title">Photographer</p>
-                        <a href="mailto:100cars@gmail.com">100cars@gmail.com</a>
-                        <img class="emlojees__image" src="./img/employees/3.png" alt="employees">
+                        <a class="employee__contact" href="mailto:100cars@gmail.com">100cars@gmail.com</a>
                     </div>
+                    <img class="employee__image" src="./img/employees/3.png" alt="employees">
                 </div>
             </div>
         </div>
@@ -226,10 +231,10 @@
                 <div class="contact-us__content">
                     <p>Your About Us page is vital. It’s often the first stop in any user’s journey through a website or blog. It also shouldn’t be their last, because first impressions count online just as much as they do in the real world. If your visitors aren’t impressed, you can expect them to leave without reading your awesome content or completing a conversion action (e.g., signing up for your newsletter, making a purchase).</p>
                     <p>
-                            <span class="ico ico_phohe"></span> <a href="tel:+79892658601">+7 (989) 265-86-01</a>
+                            <span class="ico ico_phohe"></span> <a class="nambe_phone" href="tel:+79892658601">+7 (989) 265-86-01</a>
                     </p>
                     <p>
-                            <span class="ico ico_letter"></span> <a href="mailto:100cars@gmail.com">100cars@gmail.com</a>
+                            <span class="ico ico_letter"></span> <a class="work_mail" href="mailto:100cars@gmail.com">100cars@gmail.com</a>
                     </p>
                 </div>
                 <div class="contact-us__form">
@@ -249,10 +254,10 @@
     </section>
     </main>   
     <footer class="footer">
-        <div class="wrapper">
-            <div class="layout-4-column">
-                        <a href="#" class="logo"><img src="./img/logo.png" alt="Productly LCC"></a>
-                        <article class="footer-navigation">
+        <div class="wrapper footer__wrapper">
+               <a href="#" class="logo"><img src="./img/logo.png" alt="Productly LCC"></a>
+                <div class="footer-navigation layout-3-column">
+                        <div>
                             <h4>Quick Links</h4>
                             <ul class="footer-navigation__links">
                                 <li><a href="#">About Us</a></li>
@@ -260,8 +265,8 @@
                                 <li><a href="#">Contact</a></li>
                                 <li><a href="#">FAQ</a></li>
                             </ul>
-                        </article>   
-                        <article class="footer-navigation">       
+                        </div>   
+                        <div>       
                             <h4>Legal Stuff</h4>
                             <ul class="footer-navigation__links">
                                 <li><a href="#">Disclaimer</a></li>
@@ -269,8 +274,8 @@
                                 <li><a href="#">Privacy Policy</a></li>
                                 <li><a href="#">Terms of Service</a></li>
                             </ul>
-                        </article>
-                        <article class="footer-navigation">
+                        </div>
+                        <div>
                             <h4>Quick Links</h4>
                             <ul class="footer-navigation__links">
                                 <li><a href="#">About Us</a></li>
@@ -278,8 +283,8 @@
                                 <li><a href="#">Contact</a></li>
                                 <li><a href="#">FAQ</a></li>
                             </ul>
-                        </article>  
-            </div>    
+                        </div>  
+                </div>    
         </div>
     </footer> 
 </body>

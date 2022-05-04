@@ -345,7 +345,7 @@ section, main, footer, header, article {
   box-sizing: border-box;
 }
 
-.navigation__link {
+.navigation__link, .footer-navigation__links a {
   transition: all 0.3s ease-out;
 }
 
@@ -353,7 +353,7 @@ section, main, footer, header, article {
   font-family: "Open Sans", Verdana, sans-serif;
 }
 
-.promo__text, .link-button, h1 {
+.promo__text, .footer-navigation__links, .link-button, h1 {
   font-family: "Poppins", Verdana, sans-serif;
 }
 
@@ -529,9 +529,20 @@ h5 {
   background-color: #F5F5F5;
 }
 
+.hamburger {
+  display: inline-block;
+  width: 31px;
+  height: 19px;
+}
+
 .wrapper {
   max-width: 1197px;
   margin: auto;
+}
+@media (max-width: 1197px) {
+  .wrapper {
+    padding: 0 46px;
+  }
 }
 
 .header {
@@ -582,6 +593,35 @@ h5 {
   flex-basis: 48%;
 }
 
+.footer {
+  padding: 60px 0 70px;
+}
+
+.footer__wrapper {
+  display: flex;
+}
+
+.footer-navigation {
+  flex-grow: 1;
+  padding-left: 152px;
+}
+
+.footer-navigation__title {
+  margin: 0 0 15px;
+}
+
+.footer-navigation__links a {
+  color: #544837;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 3.5rem;
+  text-decoration: none;
+}
+.footer-navigation__links a:hover {
+  color: #FF9900;
+}
+
 .contact-us {
   background: #FFEEE1;
   padding: 62px 82px;
@@ -609,6 +649,30 @@ h5 {
 
 .contact-us__button > * {
   min-width: 117px;
+}
+
+.nambe_phone {
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.4rem;
+  text-decoration: none;
+  color: #1943EF;
+}
+.nambe_phone:hover {
+  text-decoration: underline;
+}
+
+.work_mail {
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.4rem;
+  text-decoration: none;
+  color: #1943EF;
+}
+.work_mail:hover {
+  text-decoration: underline;
 }
 
 .promo {
@@ -711,6 +775,61 @@ h5 {
 
 .strategy__name {
   margin: 0 0 29px;
+}
+
+.about-us {
+  padding: 30px 0 100px 0;
+}
+
+.about-us_title {
+  margin: 0 0 14px;
+}
+
+.employee {
+  display: flex;
+  padding: 35px;
+  position: relative;
+  width: calc(30% - 32px);
+}
+
+.employee__name {
+  margin: 0%;
+}
+
+.employee__title {
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.4rem;
+  margin: 0;
+}
+
+.employee__contact {
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.4rem;
+  text-decoration: none;
+  color: #1943EF;
+}
+.employee__contact:hover {
+  text-decoration: underline;
+}
+
+.about-us__description {
+  margin: 0 0 45px;
+}
+
+.employee__image {
+  width: 98px;
+  height: 98px;
+  position: absolute;
+  top: 20px;
+  right: -32px;
+}
+
+.emloyee-container {
+  padding-right: 32px;
 }
 
 /*# sourceMappingURL=style.css.map */

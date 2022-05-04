@@ -30,3 +30,21 @@
           min-width: 117px;
      }
 }
+
+.nambe_phone     {
+     @include font($size: 1.4rem, $weight: normal); 
+     text-decoration: none;
+     color: $color-link;
+     &:hover {
+         text-decoration: underline;
+     }
+}
+
+.work_mail     {
+     @include font($size: 1.4rem, $weight: normal); 
+     text-decoration: none;
+     color: $color-link;
+     &:hover {
+         text-decoration: underline;
+     }
+}
