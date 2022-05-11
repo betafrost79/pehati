@@ -612,6 +612,11 @@ h5 {
     padding: 0 46px;
   }
 }
+@media (max-width: 1197px) {
+  .wrapper {
+    padding: 0 21px;
+  }
+}
 
 .header {
   background: #FFFFFF;
@@ -813,6 +818,18 @@ h5 {
 }
 .promo__buttons > *:last-child {
   margin-right: 0;
+}
+@media (max-width: 1197px) {
+  .promo__buttons {
+    flex-direction: column;
+  }
+  .promo__buttons > * {
+    margin-right: 0;
+    margin-bottom: 26px;
+  }
+  .promo__buttons > *:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .promo__text {
