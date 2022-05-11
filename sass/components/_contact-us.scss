@@ -32,19 +32,27 @@
 }
 
 .nambe_phone     {
-     @include font($size: 1.4rem, $weight: normal); 
+     @include font($size: 2.6rem, $weight: normal); 
      text-decoration: none;
-     color: $color-link;
+     color: #544837;
+     padding: 11px;
      &:hover {
          text-decoration: underline;
      }
 }
 
 .work_mail     {
-     @include font($size: 1.4rem, $weight: normal); 
+     @include font($size:  2.6rem, $weight: normal); 
      text-decoration: none;
-     color: $color-link;
+     color: #544837;
+     padding: 11px;
      &:hover {
          text-decoration: underline;
      }
+}
+
+.contact__paragraph {
+     display: flex;
+     align-items: center;
+
 }

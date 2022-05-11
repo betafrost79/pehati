@@ -4,6 +4,7 @@
 
 .footer__wrapper    {
     display: flex;
+    align-items: end;
 }
 
 .footer-navigation  {
@@ -28,9 +29,9 @@
     }
 }
 
-// .logo__footer   {
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-between;
-// }
+.logo__footer   {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 

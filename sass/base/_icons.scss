@@ -10,6 +10,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+
     &_violet    {
         background-color: $color-violet;
     }
@@ -25,7 +26,11 @@
     &_blue    {
         background-color: $color-blue;
     }
+
+
 }
+
+
 
 .ico_play   {
     background-image: url("../img/icons/play.svg");
@@ -56,3 +61,30 @@
     height: 17px;
 }
 
+//contacts
+
+.icon_circular  {
+    
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    // &_white    {
+        background-color: $color-white;
+    // }
+}
+
+.ico_phone  {
+    background-image: url("../img/icons/phone.svg");
+    width:7px;
+    height: 9.8px;
+}
+
+.ico_mail  {
+    background-image: url("../img/icons/mail.svg");
+    width:10.5px;
+    height: 7px;
+}

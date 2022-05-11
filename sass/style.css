@@ -503,6 +503,28 @@ h5 {
   height: 17px;
 }
 
+.icon_circular {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+}
+
+.ico_phone {
+  background-image: url("../img/icons/phone.svg");
+  width: 7px;
+  height: 9.8px;
+}
+
+.ico_mail {
+  background-image: url("../img/icons/mail.svg");
+  width: 10.5px;
+  height: 7px;
+}
+
 .tags {
   display: flex;
 }
@@ -529,10 +551,48 @@ h5 {
   background-color: #F5F5F5;
 }
 
-.hamburger {
+.hamburger__line, .hamburger::after, .hamburger:before {
+  content: "";
   display: inline-block;
+  position: absolute;
+  background: #173A56;
+  border-radius: 5px;
+  height: 3px;
+  width: 100%;
+}
+
+.hamburger {
+  display: none;
+  position: relative;
   width: 31px;
-  height: 19px;
+  height: 25px;
+  margin-right: 37px;
+}
+@media (max-width: 1197px) {
+  .hamburger {
+    display: inline-block;
+  }
+}
+.hamburger:before {
+  top: 0;
+  left: 0;
+}
+.hamburger::after {
+  bottom: 0;
+  left: 0;
+}
+
+.hamburger__line {
+  top: calc(50% - 1.5px);
+  left: 0;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo-object {
+  width: 160px;
 }
 
 .wrapper {
@@ -556,14 +616,27 @@ h5 {
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 1197px) {
+  .header__wrapper {
+    padding-left: 24px;
+  }
+}
+
+.header__logo-line {
+  display: inline-flex;
+}
 
 .header__buttons > .button {
   margin-left: 14px;
 }
-
 .header__buttons > .button:first-child {
   margin-left: 14px;
   margin-left: 0;
+}
+@media (max-width: 1197px) {
+  .header__buttons {
+    display: none;
+  }
 }
 
 .layout-4-column {
@@ -599,6 +672,7 @@ h5 {
 
 .footer__wrapper {
   display: flex;
+  align-items: end;
 }
 
 .footer-navigation {
@@ -620,6 +694,12 @@ h5 {
 }
 .footer-navigation__links a:hover {
   color: #FF9900;
+}
+
+.logo__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .contact-us {
@@ -652,31 +732,39 @@ h5 {
 }
 
 .nambe_phone {
-  font-size: 1.4rem;
+  font-size: 2.6rem;
   font-style: normal;
   font-weight: normal;
-  line-height: 1.4rem;
+  line-height: 2.6rem;
   text-decoration: none;
-  color: #1943EF;
+  color: #544837;
+  padding: 11px;
 }
 .nambe_phone:hover {
   text-decoration: underline;
 }
 
 .work_mail {
-  font-size: 1.4rem;
+  font-size: 2.6rem;
   font-style: normal;
   font-weight: normal;
-  line-height: 1.4rem;
+  line-height: 2.6rem;
   text-decoration: none;
-  color: #1943EF;
+  color: #544837;
+  padding: 11px;
 }
 .work_mail:hover {
   text-decoration: underline;
 }
 
+.contact__paragraph {
+  display: flex;
+  align-items: center;
+}
+
 .promo {
   padding: 30px 0;
+  overflow: hidden;
 }
 
 .promo__wrapper {
@@ -747,6 +835,12 @@ h5 {
 }
 .navigation__link:hover {
   color: #FF9900;
+}
+
+@media (max-width: 1197px) {
+  .header__navigation {
+    display: none;
+  }
 }
 
 .strategies {
