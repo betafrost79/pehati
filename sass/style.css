@@ -345,7 +345,7 @@ section, main, footer, header, article {
   box-sizing: border-box;
 }
 
-.navigation__link, .footer-navigation__links a {
+.navigation__link, .footer-navigation__links a, .logo-path {
   transition: all 0.3s ease-out;
 }
 
@@ -389,6 +389,14 @@ h2 {
   font-weight: bold;
   line-height: 4.6rem;
 }
+@media (max-width: 1197px) {
+  h2 {
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 3.3rem;
+  }
+}
 
 h3 {
   font-size: 2.4rem;
@@ -410,6 +418,14 @@ h4 {
   font-style: normal;
   font-weight: 900;
   line-height: 3rem;
+}
+@media (max-width: 1197px) {
+  h4 {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 3rem;
+  }
 }
 
 h5 {
@@ -609,6 +625,14 @@ h5 {
 
 .logo-object {
   width: 160px;
+  height: 30px;
+}
+
+.logo-svg {
+  cursor: pointer;
+}
+.logo-svg:hover .logo-path {
+  fill: #FF9900;
 }
 
 .wrapper {
@@ -690,14 +714,35 @@ h5 {
 .footer {
   padding: 60px 0 70px;
 }
+@media (max-width: 1197px) {
+  .footer {
+    padding: 31px 0;
+  }
+}
 
 .footer__wrapper {
   display: flex;
-  align-items: end;
+}
+@media (max-width: 1197px) {
+  .footer__wrapper {
+    flex-direction: column;
+  }
 }
 
 .footer-navigation {
   flex-grow: 1;
+  padding-left: 152px;
+}
+@media (max-width: 1197px) {
+  .footer-navigation {
+    padding-left: 0;
+    margin-top: 34px;
+  }
+}
+@media (max-width: 1197px) and (max-width: 1197px) {
+  .footer-navigation {
+    flex-direction: column;
+  }
 }
 
 .footer-navigation__title {
@@ -714,6 +759,10 @@ h5 {
 }
 .footer-navigation__links a:hover {
   color: #FF9900;
+}
+
+.footer__link {
+  list-style: none;
 }
 
 .logo__footer {
