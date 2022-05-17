@@ -16,11 +16,36 @@
 .tools__button   {
     margin-top: 60px;
     text-align: center;
+    @include media-tablet   {
+        margin-top: 0;
+    }
 }
 
 //tool block
+
+.tool   {
+    @include media-tablet   {
+        text-align: center;
+    }
+}
+
+.tool-container {
+    @include media-tablet   {
+        flex-wrap: wrap;
+        >.tool  {
+            flex-basis: 43%;
+        }
+    }
+    @include media-mobile   {
+        >.tool  {
+            flex-basis: 100%;
+            margin-bottom: 47px;
+        }
+    }
+}
+
 .tool__icon    {
-    margin-bottom: 0 0 30px;
+    margin-bottom: 30px;
 }
 
 .tool__title    {
